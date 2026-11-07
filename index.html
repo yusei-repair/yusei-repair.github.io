@@ -26,14 +26,18 @@
       line-height: 1.8;
     }
 
+    /* ヘッダー */
+
     header {
+      position: relative;
+      overflow: hidden;
       background:
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
         url("header-bg.png") center center / cover no-repeat;
       color: #ffffff;
       text-align: center;
-      padding: 65px 15px;
-      min-height: 220px;
+      padding: 65px 15px 58px;
+      min-height: 245px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -41,20 +45,75 @@
 
     header h1 {
       margin: 0;
-      font-size: clamp(27px, 5vw, 38px);
-      font-weight: 700;
+      font-size: clamp(27px, 5vw, 42px);
+      font-weight: 800;
       letter-spacing: 0.12em;
-      color: #e8edf2;
-      text-shadow:
-        0 1px 1px rgba(255, 255, 255, 0.8),
-        0 2px 3px rgba(0, 0, 0, 0.8),
-        0 0 12px rgba(220, 230, 245, 0.45);
+
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #dce8f2 25%,
+        #ffffff 48%,
+        #aabed0 70%,
+        #f5f8ff 100%
+      );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.6);
+
+      filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.85))
+              drop-shadow(0 0 9px rgba(180, 220, 255, 0.4));
+    }
+
+    /* 青白い光のライン */
+
+    .header-divider {
+      position: relative;
+      width: min(80%, 650px);
+      height: 2px;
+      margin: 17px auto 13px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        #8bdcff 18%,
+        #ffffff 50%,
+        #8bdcff 82%,
+        transparent
+      );
+      box-shadow:
+        0 0 5px #64caff,
+        0 0 12px rgba(90, 190, 255, 0.9),
+        0 0 22px rgba(90, 190, 255, 0.5);
+    }
+
+    /* ライン中央の発光ポイント */
+
+    .header-divider::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 13px;
+      height: 13px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background: #ffffff;
+      box-shadow:
+        0 0 5px 3px #ffffff,
+        0 0 13px 7px #72d5ff,
+        0 0 28px 12px rgba(70, 180, 255, 0.8);
     }
 
     header p {
       margin: 4px 0 0;
-      color: #c5d9e6;
-      font-size: 13px;
+      color: #e2edf7;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(190, 220, 255, 0.5);
     }
 
     nav {
@@ -207,8 +266,23 @@
     }
 
     @media (max-width: 600px) {
+      header {
+        min-height: 220px;
+        padding: 55px 12px 48px;
+      }
+
       header h1 {
         font-size: clamp(23px, 6vw, 30px);
+        letter-spacing: 0.08em;
+      }
+
+      .header-divider {
+        width: 85%;
+        margin: 15px auto 11px;
+      }
+
+      header p {
+        font-size: 12px;
       }
 
       nav a {
@@ -240,6 +314,7 @@
 
 <header>
   <h1>@遊星修理工房</h1>
+  <div class="header-divider" aria-hidden="true"></div>
   <p>電子機器の修理・診断サービス</p>
 </header>
 
