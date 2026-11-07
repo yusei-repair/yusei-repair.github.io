@@ -41,7 +41,16 @@
       text-align: center;
       padding: 65px 20px;
     }
-    .hero h2 { font-size: 29px; margin: 0 0 15px; }
+    .hero h2 {
+  font-size: clamp(23px, 5vw, 34px);
+  line-height: 1.6;
+  margin: 0 auto 18px;
+  max-width: 700px;
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.55);
+  overflow-wrap: anywhere;
+}
     .hero p { margin: 8px 0; }
     .hero .sub { color: #d5edf5; font-size: 14px; }
     .button {
