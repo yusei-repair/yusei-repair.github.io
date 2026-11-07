@@ -40,10 +40,16 @@
 }
 
     header h1 {
-      margin: 0;
-      font-size: 27px;
-      letter-spacing: 1px;
-    }
+  margin: 0;
+  font-size: clamp(27px, 5vw, 38px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #e8edf2;
+  text-shadow:
+    0 1px 1px #ffffff,
+    0 2px 3px rgba(0, 0, 0, 0.8),
+    0 0 12px rgba(220, 230, 245, 0.35);
+}
 
     header p {
       margin: 4px 0 0;
