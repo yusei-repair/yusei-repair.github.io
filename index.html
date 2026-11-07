@@ -256,27 +256,33 @@
         font-size: 12px;
       }
 
-      /* スマホでは横一列に固定 */
+      /* スマホでは3つ＋2つの2段表示 */
 
       nav {
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        gap: 7px;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 8px;
         padding: 12px 10px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-
-      nav::-webkit-scrollbar {
-        display: none;
+        overflow: visible;
       }
 
       nav a {
-        flex: 0 0 auto;
-        padding: 9px 12px;
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 8px 3px;
         font-size: 12px;
+        text-align: center;
+      }
+
+      nav a:nth-child(4) {
+        grid-column: 2 / span 2;
+      }
+
+      nav a:nth-child(5) {
+        grid-column: 4 / span 2;
       }
 
       .hero {
