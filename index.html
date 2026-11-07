@@ -46,9 +46,9 @@
       letter-spacing: 0.12em;
       color: #e8edf2;
       text-shadow:
-        0 1px 1px #ffffff,
+        0 1px 1px rgba(255, 255, 255, 0.8),
         0 2px 3px rgba(0, 0, 0, 0.8),
-        0 0 12px rgba(220, 230, 245, 0.35);
+        0 0 12px rgba(220, 230, 245, 0.45);
     }
 
     header p {
@@ -208,7 +208,7 @@
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 23px;
+        font-size: clamp(23px, 6vw, 30px);
       }
 
       nav a {
