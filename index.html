@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,16 +6,13 @@
   <meta name="description" content="滋賀県栗東市の電子機器修理サービス、@遊星修理工房。スマートフォン、パソコン、ゲーム機などの無料診断・修理相談を受け付けています。">
   <meta name="theme-color" content="#102638">
   <title>@遊星修理工房 | 電子機器の修理・無料診断</title>
-
   <style>
     * {
       box-sizing: border-box;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -25,9 +21,7 @@
       background: #f3f6f9;
       line-height: 1.8;
     }
-
     /* ヘッダー */
-
     header {
       background:
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)),
@@ -40,7 +34,6 @@
       flex-direction: column;
       justify-content: center;
     }
-
     header h1 {
       margin: 0;
       font-size: clamp(27px, 5vw, 42px);
@@ -64,7 +57,6 @@
         drop-shadow(0 0 5px rgba(200, 225, 255, 0.5))
         drop-shadow(0 0 12px rgba(180, 220, 255, 0.3));
     }
-
     header p {
       margin: 12px 0 0;
       color: #e2edf7;
@@ -74,9 +66,7 @@
         0 2px 4px rgba(0, 0, 0, 0.9),
         0 0 8px rgba(190, 220, 255, 0.5);
     }
-
     /* ナビゲーションメニュー */
-
     nav {
       background: #26313D;
       padding: 14px 10px;
@@ -85,7 +75,6 @@
       flex-wrap: wrap;
       gap: 9px;
     }
-
     nav a {
       display: inline-block;
       flex: 0 0 auto;
@@ -100,7 +89,6 @@
       background: rgba(255, 255, 255, 0.04);
       transition: background 0.2s, border-color 0.2s, color 0.2s;
     }
-
     nav a:hover,
     nav a:focus-visible {
       color: #ffffff;
@@ -109,16 +97,13 @@
       outline: none;
       box-shadow: 0 0 9px rgba(100, 200, 255, 0.35);
     }
-
     /* メインビジュアル */
-
     .hero {
       background: linear-gradient(135deg, #102638, #174e69, #176b82);
       color: #ffffff;
       text-align: center;
       padding: 75px 18px 80px;
     }
-
     .hero h2 {
       color: #ffffff;
       font-size: clamp(23px, 5vw, 36px);
@@ -130,18 +115,15 @@
       text-shadow: 0 3px 7px rgba(0, 0, 0, 0.55);
       overflow-wrap: anywhere;
     }
-
     .hero p {
       margin: 10px auto;
       font-size: 16px;
       max-width: 650px;
     }
-
     .hero .sub {
       color: #d6eaf3;
       font-size: 14px;
     }
-
     .button {
       display: inline-block;
       margin-top: 25px;
@@ -153,18 +135,15 @@
       font-weight: bold;
       transition: 0.2s;
     }
-
     .button:hover {
       background: #d9f2fa;
       transform: translateY(-2px);
     }
-
     main {
       max-width: 950px;
       margin: auto;
       padding: 30px 16px;
     }
-
     section {
       background: #ffffff;
       padding: 28px 25px;
@@ -172,7 +151,6 @@
       border-radius: 13px;
       box-shadow: 0 3px 12px rgba(0, 0, 0, 0.045);
     }
-
     section h2 {
       color: #17445c;
       font-size: 22px;
@@ -181,14 +159,12 @@
       margin-top: 0;
       margin-bottom: 20px;
     }
-
     section h3 {
       color: #17627d;
       font-size: 18px;
       margin-top: 25px;
       margin-bottom: 8px;
     }
-
     .notice {
       background: #edf7fa;
       border-left: 5px solid #2886a3;
@@ -196,12 +172,10 @@
       border-radius: 7px;
       margin-top: 18px;
     }
-
     .free {
       color: #087b61;
       font-weight: bold;
     }
-
     .tag {
       display: inline-block;
       background: #e7f1f5;
@@ -211,24 +185,19 @@
       margin: 3px;
       font-size: 13px;
     }
-
     ul, ol {
       padding-left: 23px;
     }
-
     li {
       margin-bottom: 5px;
     }
-
     .service-card {
       padding: 10px 0 15px;
       border-bottom: 1px solid #e6edf1;
     }
-
     .service-card:last-child {
       border-bottom: none;
     }
-
     footer {
       background: #102638;
       color: #ffffff;
@@ -236,28 +205,22 @@
       padding: 28px 15px;
       font-size: 13px;
     }
-
     footer p {
       margin: 5px 0;
     }
-
     @media (max-width: 600px) {
       header {
         min-height: 200px;
         padding: 55px 12px;
       }
-
       header h1 {
         font-size: clamp(23px, 6vw, 30px);
         letter-spacing: 0.08em;
       }
-
       header p {
         font-size: 12px;
       }
-
       /* スマホでは3つ＋2つの2段表示 */
-
       nav {
         display: grid;
         grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -265,7 +228,6 @@
         padding: 12px 10px;
         overflow: visible;
       }
-
       nav a {
         grid-column: span 2;
         display: flex;
@@ -276,42 +238,33 @@
         font-size: 12px;
         text-align: center;
       }
-
       nav a:nth-child(4) {
         grid-column: 2 / span 2;
       }
-
       nav a:nth-child(5) {
         grid-column: 4 / span 2;
       }
-
       .hero {
         padding: 60px 18px 65px;
       }
-
       .hero h2 {
         font-size: clamp(23px, 6vw, 29px);
         line-height: 1.7;
       }
-
       .hero p {
         font-size: 14px;
       }
-
       section {
         padding: 22px 17px;
       }
     }
   </style>
 </head>
-
 <body>
-
 <header>
   <h1>@遊星修理工房</h1>
   <p>電子機器の修理・診断サービス</p>
 </header>
-
 <nav>
   <a href="#about">工房について</a>
   <a href="#service">修理メニュー</a>
@@ -319,38 +272,29 @@
   <a href="#flow">修理の流れ</a>
   <a href="#contact">お問い合わせ</a>
 </nav>
-
 <div class="hero">
   <h2>壊れた。でも、<br>原因がわからない。</h2>
-
   <p>
     そんな電子機器のトラブルを、<br>
     まずは一緒に確認します。
   </p>
-
   <p class="sub">
     滋賀県栗東市を中心に対応予定
   </p>
-
   <a class="button" href="#service">修理メニューを見る</a>
 </div>
-
 <main>
-
 <section id="about">
   <h2>工房について</h2>
-
   <p>
     @遊星修理工房は、スマートフォン・パソコン・ゲーム機をはじめ、
     さまざまな電子機器の修理やメンテナンスを行う個人の修理サービスです。
   </p>
-
   <p>
     「修理できるかわからない」
     「故障の原因がわからない」
     という場合でも、まずは機器の状態を確認します。
   </p>
-
   <div class="notice">
     <p class="free">故障の基本診断は無料で行います。</p>
     修理料金や部品代が発生する作業は、
@@ -358,35 +302,29 @@
     ご了承いただいてから行います。
   </div>
 </section>
-
 <section id="service">
   <h2>修理メニュー</h2>
-
   <div class="service-card">
     <h3>スマートフォン</h3>
     <span class="tag">バッテリー交換</span>
     <span class="tag">画面交換</span>
     <span class="tag">その他の故障は要相談</span>
-
     <p>
       互換部品を使用した修理を基本とします。
       純正部品をご希望の場合はご相談ください。
     </p>
   </div>
-
   <div class="service-card">
     <h3>パソコン</h3>
     <span class="tag">SSD・HDD交換</span>
     <span class="tag">メモリ交換</span>
     <span class="tag">部品交換</span>
     <span class="tag">OS関連は要相談</span>
-
     <p>
       デスクトップ・ノートパソコンともに、
       機種や故障状態に応じて対応します。
     </p>
   </div>
-
   <div class="service-card">
     <h3>ゲーム機</h3>
     <span class="tag">コントローラー修理</span>
@@ -394,35 +332,28 @@
     <span class="tag">ファン交換</span>
     <span class="tag">ストレージ交換</span>
     <span class="tag">基板修理などは要相談</span>
-
     <p>
       ゲーム機本体やコントローラーの故障もご相談ください。
     </p>
   </div>
-
   <div class="service-card">
     <h3>その他の電子機器</h3>
-
     <p>
-      電子時計・目覚まし時計・リモコン・電子玩具・
-      オーディオ機器など、小型電子機器もご相談ください。
+      時計・リモコン・電子玩具・オーディオ機器など、
+      身近な小型電子機器の故障や不具合もご相談ください。
     </p>
   </div>
-
   <div class="notice">
     ※「要相談」の作業は、機種・故障状態・部品の入手状況などを
     確認した上で対応を判断します。
   </div>
 </section>
-
 <section id="free">
   <h2>無料診断について</h2>
-
   <p>
     電源が入らない、画面が映らない、動作がおかしいなど、
     原因がわからない故障もまずはご相談ください。
   </p>
-
   <ul>
     <li>電源が入らない</li>
     <li>画面が映らない</li>
@@ -430,16 +361,13 @@
     <li>水濡れ・腐食が疑われる</li>
     <li>原因がわからない不具合</li>
   </ul>
-
   <p>
     ※無料診断は修理の成功や復旧を保証するものではありません。
     状態によっては修理をお断りする場合があります。
   </p>
 </section>
-
 <section id="flow">
   <h2>修理の流れ</h2>
-
   <ol>
     <li>お問い合わせ・ご相談</li>
     <li>機器の状態を確認・無料診断</li>
@@ -447,62 +375,49 @@
     <li>お客様のご了承後に修理開始</li>
     <li>修理後の動作確認・お渡し</li>
   </ol>
-
   <p>
     部品の取り寄せが必要な場合は、事前に納期をご案内します。
   </p>
 </section>
-
 <section>
   <h2>ご利用にあたって</h2>
-
   <p>
     @遊星修理工房は、独学で電子機器の修理・メンテナンスを
     学んでいる個人による修理サービスです。
   </p>
-
   <p>
     専門の修理業者やメーカーとは異なるため、
     すべての機器・故障に対応できるわけではありません。
     必要な部品・設備・技術がない場合や、安全上の理由などにより、
     修理をお断りすることがあります。
   </p>
-
   <p>
     データ復旧についても、機器の状態によっては復旧できない場合があり、
     成功を保証するものではありません。
   </p>
-
   <p>
     バッテリーの膨張・損傷についてもご相談いただけますが、
     安全に作業できない状態の場合はお断りすることがあります。
   </p>
 </section>
-
 <section id="contact">
   <h2>お問い合わせ</h2>
-
   <p>
     修理できるかわからない機器でも、
     まずはお気軽にご相談ください。
   </p>
-
   <p>
     <strong>対応地域：</strong>滋賀県栗東市を中心に対応予定
   </p>
-
   <p>
     お問い合わせ方法は現在準備中です。
   </p>
 </section>
-
 </main>
-
 <footer>
   <p><strong>@遊星修理工房</strong></p>
   <p>電子機器の修理・診断サービス</p>
   <p>© @遊星修理工房</p>
 </footer>
-
 </body>
 </html>
