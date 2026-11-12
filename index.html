@@ -8,13 +8,9 @@
   <title>@遊星修理工房 | 電子機器の修理・無料診断</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -24,8 +20,6 @@
       background: #f3f6f9;
       line-height: 1.8;
     }
-
-    /* ヘッダー */
 
     header {
       background:
@@ -46,13 +40,8 @@
       font-weight: 800;
       letter-spacing: 0.12em;
       background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #dce8f2 22%,
-        #ffffff 42%,
-        #aabed0 65%,
-        #f5f8ff 85%,
-        #b8c9d8 100%
+        180deg, #ffffff 0%, #dce8f2 22%, #ffffff 42%,
+        #aabed0 65%, #f5f8ff 85%, #b8c9d8 100%
       );
       -webkit-background-clip: text;
       background-clip: text;
@@ -73,8 +62,6 @@
         0 2px 4px rgba(0, 0, 0, 0.9),
         0 0 8px rgba(190, 220, 255, 0.5);
     }
-
-    /* ナビゲーションメニュー */
 
     nav {
       background: #26313D;
@@ -108,8 +95,6 @@
       outline: none;
       box-shadow: 0 0 9px rgba(100, 200, 255, 0.35);
     }
-
-    /* メインビジュアル */
 
     .hero {
       background: linear-gradient(135deg, #102638, #174e69, #176b82);
@@ -211,22 +196,39 @@
       font-size: 13px;
     }
 
-    ul, ol {
-      padding-left: 23px;
-    }
-
-    li {
-      margin-bottom: 5px;
-    }
+    ul, ol { padding-left: 23px; }
+    li { margin-bottom: 5px; }
 
     .service-card {
       padding: 10px 0 15px;
       border-bottom: 1px solid #e6edf1;
     }
 
-    .service-card:last-child {
-      border-bottom: none;
+    .service-card:last-child { border-bottom: none; }
+
+    .contact-card {
+      background: #f6f9fb;
+      border: 1px solid #e0e9ef;
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 15px;
     }
+
+    .contact-card h3 { margin-top: 0; }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 9px 20px;
+      background: #174e69;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .contact-link:hover { background: #176b82; }
 
     footer {
       background: #102638;
@@ -236,9 +238,7 @@
       font-size: 13px;
     }
 
-    footer p {
-      margin: 5px 0;
-    }
+    footer p { margin: 5px 0; }
 
     @media (max-width: 600px) {
       header {
@@ -251,11 +251,7 @@
         letter-spacing: 0.08em;
       }
 
-      header p {
-        font-size: 12px;
-      }
-
-      /* スマホでは3つ＋2つの2段表示 */
+      header p { font-size: 12px; }
 
       nav {
         display: grid;
@@ -276,30 +272,19 @@
         text-align: center;
       }
 
-      nav a:nth-child(4) {
-        grid-column: 2 / span 2;
-      }
+      nav a:nth-child(4) { grid-column: 2 / span 2; }
+      nav a:nth-child(5) { grid-column: 4 / span 2; }
 
-      nav a:nth-child(5) {
-        grid-column: 4 / span 2;
-      }
-
-      .hero {
-        padding: 60px 18px 65px;
-      }
+      .hero { padding: 60px 18px 65px; }
 
       .hero h2 {
         font-size: clamp(23px, 6vw, 29px);
         line-height: 1.7;
       }
 
-      .hero p {
-        font-size: 14px;
-      }
-
-      section {
-        padding: 22px 17px;
-      }
+      .hero p { font-size: 14px; }
+      section { padding: 22px 17px; }
+      .contact-card { padding: 15px; }
     }
   </style>
 </head>
@@ -321,16 +306,11 @@
 
 <div class="hero">
   <h2>壊れた。でも、<br>原因がわからない。</h2>
-
   <p>
     そんな電子機器のトラブルを、<br>
     まずは一緒に確認します。
   </p>
-
-  <p class="sub">
-    滋賀県栗東市を中心に対応予定
-  </p>
-
+  <p class="sub">滋賀県栗東市を中心に対応予定</p>
   <a class="button" href="#service">修理メニューを見る</a>
 </div>
 
@@ -395,7 +375,6 @@
     <span class="tag">バッテリー交換</span>
     <span class="tag">画面交換</span>
     <span class="tag">その他の故障は要相談</span>
-
     <p>
       互換部品を使用した修理を基本とします。
       純正部品をご希望の場合はご相談ください。
@@ -408,7 +387,6 @@
     <span class="tag">メモリ交換</span>
     <span class="tag">部品交換</span>
     <span class="tag">OS関連は要相談</span>
-
     <p>
       デスクトップ・ノートパソコンともに、
       機種や故障状態に応じて対応します。
@@ -422,7 +400,6 @@
     <span class="tag">ファン交換</span>
     <span class="tag">ストレージ交換</span>
     <span class="tag">基板修理などは要相談</span>
-
     <p>
       ゲーム機本体やコントローラーの故障もご相談ください。
     </p>
@@ -430,7 +407,6 @@
 
   <div class="service-card">
     <h3>その他の電子機器</h3>
-
     <p>
       時計・リモコン・電子玩具・オーディオ機器など、
       身近な小型電子機器の故障や不具合もご相談ください。
@@ -493,9 +469,42 @@
     <strong>対応地域：</strong>滋賀県栗東市を中心に対応予定
   </p>
 
-  <p>
-    お問い合わせ方法は現在準備中です。
-  </p>
+  <div class="contact-card">
+    <h3>メール</h3>
+    <p>メールでのお問い合わせはこちらからどうぞ。</p>
+    <p>yuseirepair@gmail.com</p>
+    <a class="contact-link"
+       href="mailto:yuseirepair@gmail.com">
+      メールで問い合わせる
+    </a>
+  </div>
+
+  <div class="contact-card">
+    <h3>X（旧Twitter）</h3>
+    <p>
+      工房からのお知らせや修理に関する情報を発信します。
+    </p>
+    <a class="contact-link"
+       href="https://x.com/yusei_repair?s=11"
+       target="_blank"
+       rel="noopener noreferrer">
+      Xのプロフィールを見る
+    </a>
+  </div>
+
+  <div class="contact-card">
+    <h3>LINE公式アカウント</h3>
+    <p>
+      写真を送っていただきながら、故障の症状や機器の状態をご相談いただけます。
+    </p>
+    <a class="contact-link"
+       href="https://lin.ee/qbP8Lzj"
+       target="_blank"
+       rel="noopener noreferrer">
+      LINEで友だち追加・相談する
+    </a>
+  </div>
+
 </section>
 
 </main>
@@ -508,4 +517,3 @@
 
 </body>
 </html>
-```
